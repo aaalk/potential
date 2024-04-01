@@ -4,7 +4,7 @@
 import csv
 
 with open('history_mirror.csv', encoding="utf8") as csvfile:
-    reader = list(csv.DictReader(csvfile, delimiter=',', quotechar='"'))  # открываеи файл
+    reader = list(csv.DictReader(csvfile, delimiter=',', quotechar='"'))  # открываем файл и считываем все данные в переменную reader
     for i in range(len(reader)):
         j = i - 1
         key = reader[i]
